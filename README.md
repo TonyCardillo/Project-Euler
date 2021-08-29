@@ -1,3 +1,5 @@
+![Project Euler Solved Statistics](https://projecteuler.net/profile/TonyCardillo.png)
+
 # Project-Euler
 My attempts at Project Euler (https://projecteuler.net/), dating back to about 2012. Obsolete, for sure, but fun to study my ancient code to see how I've improved.
 
