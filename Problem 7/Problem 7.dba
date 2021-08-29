@@ -1,0 +1,49 @@
+REMSTART
+
+Euler Project :: Problem 7
+Started: 7/21/2009 4:30 PM
+Solved:  7/21/2009 ?:?? PM
+
+Description:
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+What is the 10001st prime number?
+
+Correct Answer:
+104,743
+
+After Notes:
+I pretty much just took problem 3 and modified it to tell me the 10001st prime.
+This method takes about 20 seconds to solve.
+
+REMEND
+
+` Text settings
+set text opaque
+set text size 20
+
+` Arrays
+dim Prime(10002)
+
+` Create an array that contains the first 1000 primes
+Prime(1)=2
+Prime(2)=3
+curPri=3
+for n = 5 to 200000 step 2
+   for m = 2 to n-1
+      if n mod m = 0 then exit
+      if m = n-1
+         Prime(curPri)=n
+         text 0,0,"Found "+str$(curPri)+" primes.   "
+         if curPri = 10001
+            text 0,20,"The 10001 prime is "+str$(Prime(curPri))
+            wait key
+         endif
+         inc curPri
+         exit
+      endif
+   next m
+next n
+
+end
+
+
