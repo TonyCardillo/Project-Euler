@@ -25,5 +25,5 @@ Lorem ipsum?
 Correct Answer:
 ######
 
-After Notes:
+Notes:
 Lorem ipsum dolor! 
