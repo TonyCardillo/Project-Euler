@@ -78,10 +78,10 @@ for a in range(100,1000):
                 # Yes, store it! (if not, we ignore it)
                 answer = answerCandidate
 
-# Print THE ANSWER
-print(answer)        
-
 # Print time in seconds
 endTime = time.time()
 print("{} seconds".format(endTime - startTime))
+
+# Print THE ANSWER
+print(answer)        
 quit()
