@@ -17,6 +17,8 @@ Started: M/DD/YYYY
 
 Solved:  M/DD/YYYY
 
+Speed (best of 3): ## seconds
+
 Description:
 Lorem ipsum?
 
