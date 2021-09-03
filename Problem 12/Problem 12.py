@@ -3,7 +3,7 @@ Euler Project :: Problem 12
 
 Language: Python
 Started: 9/2/2021
-Solved:  M/DD/YYYY
+Solved:  9/2/2021
 Speed (best of 3): 5.34 seconds
 
 Description:
