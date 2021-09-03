@@ -1,0 +1,47 @@
+REMSTART
+
+Euler Project :: Problem 6
+Started: 6/29/2009 11:45 AM
+Solved:  6/29/2009 11:56 AM
+
+Description:
+The sum of the squares of the first ten natural numbers is,
+1^(2) + 2^(2) + ... + 10^(2) = 385
+
+The square of the sum of the first ten natural numbers is,
+(1 + 2 + ... + 10)^(2) = 55^(2) = 3025
+
+Hence the difference between the sum of the squares of the first ten natural numbers and the square of the sum is 3025 - 385 = 2640.
+Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
+
+
+Correct Answer:
+25,164,150
+
+After Notes:
+w00t again!
+This method solves the problem in less than 1 second.
+
+REMEND
+
+` Default variables
+SUoSQttl = 0 : ` SUm of SQuares
+SQoSUttl = 0 : ` SQuare of SUm
+
+` Find the sum of the squares
+for x = 1 to 100
+   SUoSQttl = SUoSQttl + x^2
+next x
+
+` Find the square of the sum
+for x = 1 to 100
+   sum = sum + x
+next x
+SQoSUttl = sum^2
+
+` Show the answer
+set cursor 10,10
+PRINT str$(SQoSUttl - SUoSQttl)
+
+wait key
+

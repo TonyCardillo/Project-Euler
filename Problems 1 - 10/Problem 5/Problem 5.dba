@@ -1,0 +1,42 @@
+REMSTART
+
+Euler Project :: Problem 5
+Started: 6/29/2009 11:58 AM
+Solved:  6/29/2009 3:47 AM
+
+Description:
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+What is the smallest number that is evenly divisible by all of the numbers from 1 to 20?
+
+Correct Answer:
+232,792,560
+
+After Notes:
+I created a program that used a brute-force method to figure the solution out, but it took ~2 hours to solve.
+I looked online, and found out that I can optimize my brute-force, which is the final code below.
+I didn't cheat, since I would have found the answer anyway, but I needed to optimize to make it run faster.
+This method takes about 10 seconds to solve.
+
+REMEND
+
+` Text Properties
+set text size 20
+set text opaque
+
+` Default Variables
+TheAnswer = 2520
+tries = 0
+restart:
+   inc TheAnswer,2520
+   inc tries
+   if tries mod 25200 = 0 then text 10,10,"Tries:  "+str$(tries)+"     "
+   for chk = 10 to 20
+      if TheAnswer mod chk <> 0 then goto restart
+      if chk = 20
+         text 10,10,"Tries:  "+str$(tries)+"     "
+         text 10,35,str$(TheAnswer)
+         wait key
+      endif
+   next chk
+
+

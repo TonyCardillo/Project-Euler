@@ -4,7 +4,7 @@ Euler Project :: Problem 13
 Language: Python
 Started: 9/2/2021
 Solved:  9/2/2021
-Speed (best of 3): 0.0 ms (the addition is too fast to measure)
+Speed (median of 3): 0.0 ms (the addition is too fast to measure)
 
 Description:
 Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
