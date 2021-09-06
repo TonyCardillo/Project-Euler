@@ -4,7 +4,7 @@ Euler Project :: Problem 20
 Language: Python
 Started: 9/2/2021
 Solved: 9/3/2021 at midnight!  
-Speed (median of 3): 0.0 ms (too fast to profile)
+Speed (median of 3): 0.00 milliseconds (too fast to profile)
 
 
 Description:
@@ -52,5 +52,5 @@ number = fnNaiveFactorial(100)
 theAnswer = fnSumOfDigits(str(number))
 endTime = time.time()
 
-print("{} milliseconds".format(startTime-endTime))
+print("{} milliseconds".format(1000.0*(startTime-endTime)))
 print(theAnswer)

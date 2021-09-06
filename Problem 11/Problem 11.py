@@ -1,7 +1,7 @@
 '''Euler Project :: Problem 11
 Started: 9/1/2021
 Solved: 9/1/2021
-Speed (median of 3): 5.99 ms
+Speed (median of 3): 4.49 milliseconds
 
 Description:
 In the 20×20 grid below, four numbers along a diagonal line have been marked in red.

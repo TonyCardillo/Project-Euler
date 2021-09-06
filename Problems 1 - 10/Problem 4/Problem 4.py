@@ -2,6 +2,7 @@
 Euler Project :: Problem 4
 Started: 6/29/2009 (In DarkBASIC!)
 Solved: 9/1/2021 (In Python!)
+Speed (median of 3): 716 milliseconds
 
 Description:
 A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 * 99.
@@ -80,7 +81,7 @@ for a in range(100,1000):
 
 # Print time in seconds
 endTime = time.time()
-print("{} seconds".format(endTime - startTime))
+print("{} milliseconds".format(1000.0*(endTime - startTime)))
 
 # Print THE ANSWER
 print(answer)        

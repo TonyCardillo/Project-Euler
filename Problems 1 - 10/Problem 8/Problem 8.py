@@ -1,7 +1,7 @@
 '''Euler Project :: Problem 8
 Started: 7/22/2009
 Solved: 9/1/2021
-Speed (median of 3): 1.50 ms
+Speed (median of 3): 0.998 milliseconds
 
 Description:
 The four adjacent digits in the 1000-digit number that have the greatest product are 9 × 9 × 8 × 9 = 5832:
@@ -98,7 +98,7 @@ for leftmostDigit in range(0, 1000-windowWidth+1):
 
 # Print the time to calculate
 endTime = time.time()
-print("{} seconds".format(endTime-startTime))
+print("{} milliseconds".format(1000.0*(endTime-startTime)))
 
 # Ding ding
 print(theAnswer)
