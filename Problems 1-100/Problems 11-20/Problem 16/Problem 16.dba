@@ -1,0 +1,53 @@
+REMSTART
+
+Euler Project :: Problem 16
+Started: 7/22/2009 9:06 AM
+Solved:  7/22/2009 12:15 PM
+
+Description:
+2^(15) = 32768 and the sum of its digits is 3 + 2 + 7 + 6 + 8 = 26.
+What is the sum of the digits of the number 2^(1000)?
+
+Correct Answer:
+1366
+
+
+After Notes:
+w00t.  Finally, I figured out a way to multiply numbers over double integers!
+This method takes about 2 seconds to solve.
+
+REMEND
+
+` Create an array to store the digits
+dim num(302) as byte : ` Wolfram|Alpha says the number is 302 digits long
+
+` Double the number 1000 times using pen-and-paper multiplication
+num(1)=2
+chk as byte = 0
+carry as byte = 0
+for x = 1 to 999
+   for y = 1 to 302
+      ` Multiply current location by 2 and add the carry
+      chk = num(y)*2
+      chk = chk + carry
+
+      ` If there's a carry, then put the leftmost number in the carry position
+      if chk >= 10
+         carry=val(left$(str$(chk),1))
+      else
+         carry=0
+      endif
+
+      ` Assign the rightmost value to the current location
+      num(y)=val(right$(str$(chk),1))
+   next y
+next x
+
+total = 0
+for prnt = 1 to 302
+   total = total + num(prnt)
+next prnt
+text 0,0,"The answer you've all been waiting for is:"
+text 0,20,str$(total)
+wait key
+end
