@@ -19,11 +19,11 @@ Solved:  M/DD/YYYY
 
 Speed (median of 3): ## seconds
 
-Description:
+Problem:
 Lorem ipsum?
 
-Correct Answer:
-######
+Answer:
+###
 
 Notes:
 Lorem ipsum dolor! 
